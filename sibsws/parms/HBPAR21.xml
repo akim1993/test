@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HBPAR21 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="urn:sibs:ws:parms:model"
+    xsi:schemaLocation="urn:sibs:ws:parms:model sibs-parms.xsd">
+
+	<sHBPAR21 HBSRVD="inqMbrBasicInfo" HBHOST="MB01500">
+		<HBACTV>Y</HBACTV>
+	</sHBPAR21>
+	<sHBPAR21 HBSRVD="inqMbrInformation" HBHOST="MB01601">
+		<HBACTV>Y</HBACTV>
+	</sHBPAR21>
+	<sHBPAR21 HBSRVD="inqMbrStmntRetrieval" HBHOST="MB02055">
+		<HBACTV>Y</HBACTV>
+	</sHBPAR21>
+	<sHBPAR21 HBSRVD="inqMbrAddr" HBHOST="MB01672">
+		<HBACTV>Y</HBACTV>
+	</sHBPAR21>
+	<sHBPAR21 HBSRVD="updMbrAddr" HBHOST="MB01803">
+		<HBACTV>Y</HBACTV>
+	</sHBPAR21>
+	<sHBPAR21 HBSRVD="inqMbrAddr" HBHOST="MB01672">
+		<HBACTV>Y</HBACTV>
+	</sHBPAR21>
+	<sHBPAR21 HBSRVD="updMbrEAddr" HBHOST="MB01853">
+		<HBACTV>Y</HBACTV>
+	</sHBPAR21>
+	<sHBPAR21 HBSRVD="inqWthdrwEligibility" HBHOST="MB04640">
+		<HBACTV>Y</HBACTV>
+	</sHBPAR21>
+	<sHBPAR21 HBSRVD="inqAppHistory" HBHOST="MB04633">
+		<HBACTV>Y</HBACTV>
+	</sHBPAR21>
+	<sHBPAR21 HBSRVD="inqPaymtHistory" HBHOST="MB04629">
+		<HBACTV>Y</HBACTV>
+	</sHBPAR21>
+	<sHBPAR21 HBSRVD="debitPayment" HBHOST="TX0000">
+		<HBACTV>Y</HBACTV>
+	</sHBPAR21>
+	<sHBPAR21 HBSRVD="creditPayment" HBHOST="TX0000">
+		<HBACTV>Y</HBACTV>
+	</sHBPAR21>
+	<sHBPAR21 HBSRVD="receiptingPayment" HBHOST="TX0000">
+		<HBACTV>Y</HBACTV>
+	</sHBPAR21>
+	
+</HBPAR21>

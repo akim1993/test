@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HBPAR2 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="urn:sibs:ws:parms:model"
+    xsi:schemaLocation="urn:sibs:ws:parms:model sibs-parms.xsd">
+
+	<sHBPAR2 HBSRVD="inqMbrBasicInfo">
+		<HBDESC>Member Basic Info</HBDESC>
+		<HBLDSC>Member Basic Info</HBLDSC>
+		<HBSDSC>Member Basic Info</HBSDSC>
+		<HBACTV>Y</HBACTV>
+		<HBAPPL>BDS</HBAPPL>
+		<HBNOTE/>
+		<HBSCOP>This message type is:</HBSCOP>
+	</sHBPAR2>
+	<sHBPAR2 HBSRVD="inqMbrInformation">
+		<HBDESC>Member Information Inquiry</HBDESC>
+		<HBLDSC>Member Information Inquiry</HBLDSC>
+		<HBSDSC>Member Information Inquiry</HBSDSC>
+		<HBACTV>Y</HBACTV>
+		<HBAPPL>BDS</HBAPPL>
+		<HBNOTE/>
+		<HBSCOP>This message type is:</HBSCOP>
+	</sHBPAR2>
+	<sHBPAR2 HBSRVD="inqMbrStmntRetrieval">
+		<HBDESC>Member Statement Retrieval</HBDESC>
+		<HBLDSC>Member Statement Retrieval</HBLDSC>
+		<HBSDSC>Member Statement Retrieval</HBSDSC>
+		<HBACTV>Y</HBACTV>
+		<HBAPPL>BDS</HBAPPL>
+		<HBNOTE/>
+		<HBSCOP>This message type is:</HBSCOP>
+	</sHBPAR2>
+	<sHBPAR2 HBSRVD="inqMbrAddr">
+		<HBDESC>Member Address Inquiry</HBDESC>
+		<HBLDSC>Member Address Inquiry</HBLDSC>
+		<HBSDSC>Member Address Inquiry</HBSDSC>
+		<HBACTV>Y</HBACTV>
+		<HBAPPL>BDS</HBAPPL>
+		<HBNOTE/>
+		<HBSCOP>This message type is:</HBSCOP>
+	</sHBPAR2>
+	<sHBPAR2 HBSRVD="updMbrAddr">
+		<HBDESC>Member Address Maintenance</HBDESC>
+		<HBLDSC>Member Address Maintenance</HBLDSC>
+		<HBSDSC>Member Address Maintenance</HBSDSC>
+		<HBACTV>Y</HBACTV>
+		<HBAPPL>BDS</HBAPPL>
+		<HBNOTE/>
+		<HBSCOP>This message type is:</HBSCOP>
+	</sHBPAR2>
+	<sHBPAR2 HBSRVD="updMbrEAddr">
+		<HBDESC>Member E-Address Maintenance</HBDESC>
+		<HBLDSC>Member E-Address Maintenance</HBLDSC>
+		<HBSDSC>Member E-Address Maintenance</HBSDSC>
+		<HBACTV>Y</HBACTV>
+		<HBAPPL>BDS</HBAPPL>
+		<HBNOTE/>
+		<HBSCOP>This message type is:</HBSCOP>
+	</sHBPAR2>
+	<sHBPAR2 HBSRVD="inqWthdrwEligibility">
+		<HBDESC>Withdrawal Eligibility Inquiry</HBDESC>
+		<HBLDSC>Withdrawal Eligibility Inquiry</HBLDSC>
+		<HBSDSC>Withdrawal Eligibility Inquiry</HBSDSC>
+		<HBACTV>Y</HBACTV>
+		<HBAPPL>BDS</HBAPPL>
+		<HBNOTE/>
+		<HBSCOP>This message type is:</HBSCOP>
+	</sHBPAR2>
+	<sHBPAR2 HBSRVD="inqAppHistory">
+		<HBDESC>Withdrawal Application History Inquiry</HBDESC>
+		<HBLDSC>Withdrawal Application History Inquiry</HBLDSC>
+		<HBSDSC>Withdrawal Application History Inquiry</HBSDSC>
+		<HBACTV>Y</HBACTV>
+		<HBAPPL>BDS</HBAPPL>
+		<HBNOTE/>
+		<HBSCOP>This message type is:</HBSCOP>
+	</sHBPAR2>
+	<sHBPAR2 HBSRVD="inqPaymtHistory">
+		<HBDESC>Withdrawal Payment History</HBDESC>
+		<HBLDSC>Withdrawal Payment History</HBLDSC>
+		<HBSDSC>Withdrawal Payment History</HBSDSC>
+		<HBACTV>Y</HBACTV>
+		<HBAPPL>BDS</HBAPPL>
+		<HBNOTE/>
+		<HBSCOP>This message type is:</HBSCOP>
+	</sHBPAR2>
+	<sHBPAR2 HBSRVD="debitPayment">
+		<HBDESC>Debit Payment</HBDESC>
+		<HBLDSC>Debit Payment</HBLDSC>
+		<HBSDSC>Debit Payment</HBSDSC>
+		<HBACTV>Y</HBACTV>
+		<HBAPPL>BDS</HBAPPL>
+		<HBNOTE/>
+		<HBSCOP>This message type is:</HBSCOP>
+	</sHBPAR2>
+	<sHBPAR2 HBSRVD="creditPayment">
+		<HBDESC>Credit Payment</HBDESC>
+		<HBLDSC>Credit Payment</HBLDSC>
+		<HBSDSC>Credit Payment</HBSDSC>
+		<HBACTV>Y</HBACTV>
+		<HBAPPL>BDS</HBAPPL>
+		<HBNOTE/>
+		<HBSCOP>This message type is:</HBSCOP>
+	</sHBPAR2>
+	<sHBPAR2 HBSRVD="receiptingPayment">
+		<HBDESC>receipting Payment</HBDESC>
+		<HBLDSC>receipting Payment</HBLDSC>
+		<HBSDSC>receipting Payment</HBSDSC>
+		<HBACTV>Y</HBACTV>
+		<HBAPPL>BDS</HBAPPL>
+		<HBNOTE/>
+		<HBSCOP>This message type is:</HBSCOP>
+	</sHBPAR2>
+</HBPAR2>

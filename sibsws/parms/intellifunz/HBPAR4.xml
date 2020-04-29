@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HBPAR4 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="urn:sibs:ws:parms:model"
+    xsi:schemaLocation="urn:sibs:ws:parms:model sibs-parms.xsd">
+  <sHBPAR4 HBCHNL="MBL">
+    <HBDESC>Mobile Banking</HBDESC>
+    <HBLDSC>Mobile Banking</HBLDSC>
+    <HBSDSC>Mobile Banking</HBSDSC>
+    <HBACTV>Y</HBACTV>
+  </sHBPAR4>
+  <sHBPAR4 HBCHNL="BTS">
+    <HBDESC>BTS</HBDESC>
+    <HBLDSC>BTS</HBLDSC>
+    <HBSDSC>BTS</HBSDSC>
+    <HBACTV>Y</HBACTV>
+  </sHBPAR4>
+  <sHBPAR4 HBCHNL="POS">
+    <HBDESC>POS</HBDESC>
+    <HBLDSC>POS</HBLDSC>
+    <HBSDSC>POS</HBSDSC>
+    <HBACTV>Y</HBACTV>
+  </sHBPAR4>  
+  <sHBPAR4 HBCHNL="WEB">
+    <HBDESC>WEB</HBDESC>
+    <HBLDSC>WEB</HBLDSC>
+    <HBSDSC>WEB</HBSDSC>
+    <HBACTV>Y</HBACTV>
+  </sHBPAR4>
+   <sHBPAR4 HBCHNL="BDS">
+    <HBDESC>BDS</HBDESC>
+    <HBLDSC>BDS</HBLDSC>
+    <HBSDSC>BDS</HBSDSC>
+    <HBACTV>Y</HBACTV>
+  </sHBPAR4>
+</HBPAR4>

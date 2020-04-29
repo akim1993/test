@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/" debug="true">
+
+<!-- STDOUT -->
+     <appender name="stdout" class="org.apache.log4j.ConsoleAppender">
+        <param name="Target" value="System.out" />
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d %-5p [%t][%c{1}:%M] %m %n" />
+        </layout>
+    </appender>
+
+<!-- GLOBAL LOG levels (warn, info) Log --> 
+    <appender name="all-log" class="org.apache.log4j.RollingFileAppender">
+		<param name="MaxFileSize" value="10MB" />
+        <param name="MaxBackupIndex" value="5" />
+        <param name="File" value="/usr/local/sibsws/logs/${MY_DATE}/sibsws-all.log" /> 
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d %-5p [%t][%c{1}:%M] %m %n" />
+        </layout>
+        <filter class="org.apache.log4j.varia.LevelRangeFilter">
+            <param name="LevelMin" value="info" />
+            <param name="LevelMax" value="warn" />
+            <param name="AcceptOnMatch" value="true" />
+        </filter>
+    </appender>
+	
+<!-- GLOBAL LOG levels (warn, error, fatal) Log --> 
+    <appender name="error-log" class="org.apache.log4j.RollingFileAppender">
+		<param name="MaxFileSize" value="10MB" />
+        <param name="MaxBackupIndex" value="5" /> 
+        <param name="File" value="/usr/local/sibsws/logs/${MY_DATE}/sibsws-error.log" /> 
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d %-5p [%t][%c{1}:%M] %m %n" />
+        </layout>
+        <filter class="org.apache.log4j.varia.LevelRangeFilter">
+            <param name="LevelMin" value="warn" />
+            <param name="LevelMax" value="fatal" />
+            <param name="AcceptOnMatch" value="true" />
+        </filter>
+    </appender>
+	
+<!-- Per WebService ALL levels (debug, info, warn, error, fatal) --> 
+    <appender name="ws-all-log" class="org.apache.log4j.RollingFileAppender">
+		<param name="MaxFileSize" value="10MB" />
+        <param name="MaxBackupIndex" value="5" />
+        <param name="File" value="/usr/local/sibsws/logs/${MY_DATE}/${MY_SVC}-all.log" /> 
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d %-5p [%t][%c{1}:%M] %m %n" />
+        </layout>
+        <filter class="org.apache.log4j.varia.LevelRangeFilter">
+            <param name="LevelMin" value="trace" />
+            <param name="LevelMax" value="fatal" />
+            <param name="AcceptOnMatch" value="true" />
+        </filter>
+    </appender>
+ 
+ <!-- Per WebService levels (warn, error, fatal) Log --> 
+    <appender name="ws-error-log" class="org.apache.log4j.RollingFileAppender">
+		<param name="MaxFileSize" value="10MB" />
+        <param name="MaxBackupIndex" value="5" /> 
+        <param name="File" value="/usr/local/sibsws/logs/${MY_DATE}/${MY_SVC}-error.log" /> 
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d %-5p [%t][%c{1}:%M] %m %n" />
+        </layout>
+        <filter class="org.apache.log4j.varia.LevelRangeFilter">
+            <param name="LevelMin" value="warn" />
+            <param name="LevelMax" value="fatal" />
+            <param name="AcceptOnMatch" value="true" />
+        </filter>
+    </appender>
+    
+<!-- Trace Log on individual Framework Library Classes	
+	<appender name="PooledObjectMonitorAppender-log" class="org.apache.log4j.RollingFileAppender">
+		<param name="MaxFileSize" value="10MB" />
+        <param name="MaxBackupIndex" value="5" />
+        <param name="File" value="/usr/local/sibsws/logs/${MY_DATE}/PooledObjectMon.log" /> 
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d %-5p [%t][%c{1}:%M] %m %n" />
+        </layout>
+        <filter class="org.apache.log4j.varia.LevelRangeFilter">
+            <param name="LevelMin" value="trace" />
+            <param name="LevelMax" value="fatal" />
+            <param name="AcceptOnMatch" value="true" />
+        </filter>
+    </appender>
+	
+	<logger name="sibs.ws.monitor.PooledObjectMonitor" additivity="false">
+		<level value="info"/>
+		<appender-ref ref="PooledObjectMonitorAppender-log" /> 
+    </logger> 
+-->
+	<!-- GLOBAL Trace Log for SoapHandler: sibs.ws.soap.handlers.MessageProtocol	-->
+	<appender name="SoapMessageLogging-log" class="org.apache.log4j.RollingFileAppender">
+		<param name="MaxFileSize" value="10MB" />
+        <param name="MaxBackupIndex" value="5" />
+        <param name="File" value="/usr/local/sibsws/logs/${MY_DATE}/soapmessagelogging.log" /> 
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d %-5p [%t][%c{1}:%M] %m %n" />
+        </layout>
+        <filter class="org.apache.log4j.varia.LevelRangeFilter">
+            <param name="LevelMin" value="trace" />
+            <param name="LevelMax" value="fatal" />
+            <param name="AcceptOnMatch" value="true" />
+        </filter>
+    </appender>
+	
+	<appender name="RestfulMessageLogging-log" class="org.apache.log4j.RollingFileAppender">
+		<param name="MaxFileSize" value="10MB" />
+        <param name="MaxBackupIndex" value="5" />
+        <param name="File" value="/usr/local/sibsws/logs/${MY_DATE}/restfulmessage.log" /> 
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d %-5p [%t][%c{1}:%M] %m %n" />
+        </layout>
+        <filter class="org.apache.log4j.varia.LevelRangeFilter">
+            <param name="LevelMin" value="trace" />
+            <param name="LevelMax" value="fatal" />
+            <param name="AcceptOnMatch" value="true" />
+        </filter>
+    </appender>
+	
+	<logger name="sibs.ws.soap.handlers.MessageProtocol" additivity="false"> 
+		<appender-ref ref="SoapMessageLogging-log" /> 
+    </logger> 
+	
+	<logger name="sibs.ws.rs.handlers.MessageProtocol" additivity="false"> 
+		<appender-ref ref="RestfulMessageLogging-log" /> 
+    </logger>
+	
+    <root>
+        <level value="debug" />
+        <appender-ref ref="stdout" />
+		<appender-ref ref="all-log" />
+        <appender-ref ref="error-log" />
+		<appender-ref ref="ws-all-log" />
+        <appender-ref ref="ws-error-log" />
+    </root>
+ 
+</log4j:configuration>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>                                                                                                                                                                                                                                                                      
+<VCPAR1 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"                                                                                                                                                                                                                                               
+    xmlns="urn:sibs:ws:parms:model"                                                                                                                                                                                                                                                                         
+    xsi:schemaLocation="urn:sibs:ws:parms:model sibs-parms.xsd">                                                                                                                                                                                                                                            
+  <sVCPAR1>                                                                                                                                                                                                                                                                                    
+    <VP1LP8></VP1LP8>
+    <VP1PD8></VP1PD8>
+    <VP1NB8>30/8/2016</VP1NB8>
+    <VP1TR8></VP1TR8>
+    <VP1BKN>1</VP1BKN>
+    <VP1BRN>1</VP1BRN>
+    <VP1CCY></VP1CCY>
+    <VP1GLMD></VP1GLMD>
+    <VP1ACML></VP1ACML>                                                                                                                                                                                                                                                                                       
+  </sVCPAR1>                                                                                                                                                                                                                                                                                   
+</VCPAR1>                                                                                                                                                                                                                                                                                                   

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+             xmlns='urn:sibs:ws:config:model'
+             xsi:schemaLocation='urn:sibs:ws:config:model config.xsd'>
+    <app id="FD">	
+        <lib-path name="/usr/local/tomcat/sibsws/lib"/>	
+		<parms-path name="/usr/local/tomcat/sibsws/parms"/>        
+        <env envCd="SIPF" countryCd="MY" sourceId="IFS" schemaValidator="0" ipValidator="0"/>
+		<!-- schemaValidator = "0" - no validation(default), "1" - input only, "2" - input & output -->			
+		<object-pool-monitor scanIntervalSec="-1"/>		
+        <host-connector>
+            <object-pool-config minIdle="5" maxIdle="10"/>
+			<adapter handler="sibs.dsp.handler.DspImplXslV8" connector="sibs.dsp.connector.DspConnTcpBin" encodeOption="1"/>
+			<endpoint server="192.168.180.99" port="7001" timeoutsec="45"/>
+        </host-connector> 		 	    
+		<ws-executor>
+            <object-pool-config minIdle="25" maxIdle="25" maxTotal="25"/>
+            <service-beans> 
+			    <disposeHostConnectionPerCall>false</disposeHostConnectionPerCall>
+                <disposeRuleConnectionPerCall>false</disposeRuleConnectionPerCall> 
+				<object-pool-config minIdle="25" maxIdle="25" maxTotal="25"/>
+			</service-beans> 
+        </ws-executor> 
+		<as400>
+			<host name="10.44.44.112" userId="ABCDN" passwd="zxcvbnm1"  enabled="false"/>
+			<serviceLog DTQPut="/QSYS.LIB/SAGD1SYSE.LIB/DQMBSSMT1C.DTAQ"/>	
+			<fileSync IFSPath="/home/servicehub" IFSAgentServer="localhost" IFSAgentPort="8881" IFSClientMonEnabled="true" IFSClientReConnIntervalSec="60">
+				<parms scanIntervalSec="30">
+ 					<file id="HF_SERVICE" 		 name="HBPAR2.xml"  sync="online" enabled="true"/>
+					<file id="HF_SERVICEHOSTTC"  name="HBPAR21.xml" sync="online" enabled="true"/>
+					<file id="HF_SERVICESCHEMA"  name="HBPAR22.xml" sync="online" enabled="true"/>
+					<file id="HF_SERVICEEDIT" 	 name="HBPAR23.xml" sync="online" enabled="true"/>
+					<file id="HF_HOSTTC" 		 name="HBPAR3.xml"  sync="online" enabled="true"/>
+					<file id="HF_CHANNEL" 		 name="HBPAR4.xml"  sync="online" enabled="true"/> 
+					<file id="HF_CHANNELSERVICE" name="HBPAR41.xml" sync="online" enabled="true"/>
+					<file id="HF_CHANNELIPADDR"  name="HBPAR42.xml" sync="online" enabled="true"/>
+					<file id="HF_GENPAR" 		 name="HBPAR51WK.xml" sync="online" enabled="true"/>
+					<file id="HF_HTERRORLIST" 	 name="TLEDT.xml"   sync="online" enabled="true"/>
+					<file id="VF_FINMSGPF" 		 name="FINMSGPF.xml" sync="online" enabled="true"/>
+				</parms>
+				<wsdl enabled="true" scanIntervalSec="60"/>	
+			</fileSync>
+		</as400>			 
+    </app>
+</config>

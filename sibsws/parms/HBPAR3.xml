@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HBPAR3 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="urn:sibs:ws:parms:model"
+    xsi:schemaLocation="urn:sibs:ws:parms:model sibs-parms.xsd">
+
+	<sHBPAR3 HBHOST="MB01500">
+		<HBDESC>Member Basic Info</HBDESC>
+		<HBLDSC/>
+		<HBSDSC>Member Basic Info</HBSDSC>
+		<HBAPPL>BDS</HBAPPL>
+		<HBHAPP>BDS</HBHAPP>
+		<HBACTV>Y</HBACTV>
+	</sHBPAR3>
+	<sHBPAR3 HBHOST="MB01601">
+		<HBDESC>Member Information Inquiry</HBDESC>
+		<HBLDSC/>
+		<HBSDSC>Member Information Inquiry</HBSDSC>
+		<HBAPPL>BDS</HBAPPL>
+		<HBHAPP>BDS</HBHAPP>
+		<HBACTV>Y</HBACTV>
+	</sHBPAR3>
+	<sHBPAR3 HBHOST="MB02055">
+		<HBDESC>Member Statement Retrieval</HBDESC>
+		<HBLDSC/>
+		<HBSDSC>Member Statement Retrieval</HBSDSC>
+		<HBAPPL>BDS</HBAPPL>
+		<HBHAPP>BDS</HBHAPP>
+		<HBACTV>Y</HBACTV>
+	</sHBPAR3>
+	<sHBPAR3 HBHOST="MB01672">
+		<HBDESC>Member Address Inquiry</HBDESC>
+		<HBLDSC/>
+		<HBSDSC>Member Address Inquiry</HBSDSC>
+		<HBAPPL>BDS</HBAPPL>
+		<HBHAPP>BDS</HBHAPP>
+		<HBACTV>Y</HBACTV>
+	</sHBPAR3>
+	<sHBPAR3 HBHOST="MB01803">
+		<HBDESC>Member Address Maintenance</HBDESC>
+		<HBLDSC/>
+		<HBSDSC>Member Address Maintenance</HBSDSC>
+		<HBAPPL>BDS</HBAPPL>
+		<HBHAPP>BDS</HBHAPP>
+		<HBACTV>Y</HBACTV>
+	</sHBPAR3>
+	<sHBPAR3 HBHOST="MB01672">
+		<HBDESC>Member E-Address Inquiry</HBDESC>
+		<HBLDSC/>
+		<HBSDSC>Member E-Address Inquiry</HBSDSC>
+		<HBAPPL>BDS</HBAPPL>
+		<HBHAPP>BDS</HBHAPP>
+		<HBACTV>Y</HBACTV>
+	</sHBPAR3>
+	<sHBPAR3 HBHOST="MB01853">
+		<HBDESC>Member E-Address Maintenance</HBDESC>
+		<HBLDSC/>
+		<HBSDSC>Member E-Address Maintenance</HBSDSC>
+		<HBAPPL>BDS</HBAPPL>
+		<HBHAPP>BDS</HBHAPP>
+		<HBACTV>Y</HBACTV>
+	</sHBPAR3>
+	<sHBPAR3 HBHOST="MB04640">
+		<HBDESC>Withdrawal Eligibility Inquiry</HBDESC>
+		<HBLDSC/>
+		<HBSDSC>Withdrawal Eligibility Inquiry</HBSDSC>
+		<HBAPPL>BDS</HBAPPL>
+		<HBHAPP>BDS</HBHAPP>
+		<HBACTV>Y</HBACTV>
+	</sHBPAR3>
+	<sHBPAR3 HBHOST="MB04633">
+		<HBDESC>Withdrawal Application History Inquiry</HBDESC>
+		<HBLDSC/>
+		<HBSDSC>Withdrawal Application History Inquiry</HBSDSC>
+		<HBAPPL>BDS</HBAPPL>
+		<HBHAPP>BDS</HBHAPP>
+		<HBACTV>Y</HBACTV>
+	</sHBPAR3>
+	<sHBPAR3 HBHOST="MB04629">
+		<HBDESC>Withdrawal Payment History</HBDESC>
+		<HBLDSC/>
+		<HBSDSC>Withdrawal Payment History</HBSDSC>
+		<HBAPPL>BDS</HBAPPL>
+		<HBHAPP>BDS</HBHAPP>
+		<HBACTV>Y</HBACTV>
+	</sHBPAR3>
+	<sHBPAR3 HBHOST="TX0000">
+		<HBDESC>Debit/Credit Payment</HBDESC>
+		<HBLDSC/>
+		<HBSDSC>Debit/Credit Payment</HBSDSC>
+		<HBAPPL>BDS</HBAPPL>
+		<HBHAPP>BDS</HBHAPP>
+		<HBACTV>Y</HBACTV>
+	</sHBPAR3>
+</HBPAR3>

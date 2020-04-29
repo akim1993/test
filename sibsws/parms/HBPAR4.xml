@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HBPAR4 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="urn:sibs:ws:parms:model"
+    xsi:schemaLocation="urn:sibs:ws:parms:model sibs-parms.xsd">
+
+	<sHBPAR4 HBCHNL="BDS">
+		<HBDESC>BDS</HBDESC>
+		<HBLDSC>BDS</HBLDSC>
+		<HBSDSC>BDS</HBSDSC>
+		<HBACTV>Y</HBACTV>
+	</sHBPAR4>
+</HBPAR4>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HBPAR42 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="urn:sibs:ws:parms:model"
+    xsi:schemaLocation="urn:sibs:ws:parms:model sibs-parms.xsd">
+
+	<sHBPAR42 HBIPAD="127.0.0.1" HBCHNL="BDS">
+		<HBACTV>Y</HBACTV>
+	</sHBPAR42>
+	
+	<sHBPAR42 HBIPAD="10.8.1.197" HBCHNL="BDS">
+		<HBACTV>Y</HBACTV>
+	</sHBPAR42>
+</HBPAR42>
+

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HBPAR41 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="urn:sibs:ws:parms:model"
+    xsi:schemaLocation="urn:sibs:ws:parms:model sibs-parms.xsd">
+
+	<!-- MBASE -->
+	<sHBPAR41 HBSRVD="inqMbrBasicInfo" HBCHNL="BDS">
+		<HBACTV>Y</HBACTV>
+	</sHBPAR41>
+	<sHBPAR41 HBSRVD="inqMbrInformation" HBCHNL="BDS">
+		<HBACTV>Y</HBACTV>
+	</sHBPAR41>
+	<sHBPAR41 HBSRVD="inqMbrStmntRetrieval" HBCHNL="BDS">
+		<HBACTV>Y</HBACTV>
+	</sHBPAR41>
+	<sHBPAR41 HBSRVD="inqMbrAddr" HBCHNL="BDS">
+		<HBACTV>Y</HBACTV>
+	</sHBPAR41>
+	<sHBPAR41 HBSRVD="updMbrAddr" HBCHNL="BDS">
+		<HBACTV>Y</HBACTV>
+	</sHBPAR41>
+	<sHBPAR41 HBSRVD="updMbrEAddr" HBCHNL="BDS">
+		<HBACTV>Y</HBACTV>
+	</sHBPAR41>
+	<sHBPAR41 HBSRVD="inqWthdrwEligibility" HBCHNL="BDS">
+		<HBACTV>Y</HBACTV>
+	</sHBPAR41>
+	<sHBPAR41 HBSRVD="inqAppHistory" HBCHNL="BDS">
+		<HBACTV>Y</HBACTV>
+	</sHBPAR41>
+	<sHBPAR41 HBSRVD="inqPaymtHistory" HBCHNL="BDS">
+		<HBACTV>Y</HBACTV>
+	</sHBPAR41>
+	<sHBPAR41 HBSRVD="debitPayment" HBCHNL="BDS">
+		<HBACTV>Y</HBACTV>
+	</sHBPAR41>
+	<sHBPAR41 HBSRVD="creditPayment" HBCHNL="BDS">
+		<HBACTV>Y</HBACTV>
+	</sHBPAR41>
+	<sHBPAR41 HBSRVD="receiptingPayment" HBCHNL="BDS">
+		<HBACTV>Y</HBACTV>
+	</sHBPAR41>
+</HBPAR41>

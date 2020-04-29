@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HBTLERR  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+          xmlns='urn:sibs:ws:parms:model'
+          xsi:schemaLocation='urn:sibs:ws:parms:model sibs-parms.xsd'>
+    <SHBTLERR ERR="1" DESC="HT ERRNO 1"></SHBTLERR>    
+	<SHBTLERR ERR="178" DESC="DUPLICATE JOURNAL SEQUENCE"></SHBTLERR>    
+</HBTLERR>
