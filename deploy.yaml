@@ -1,0 +1,28 @@
+ apiVersion: apps/v1
+ kind: Deployment
+ metadata:
+   name: connectznow-api-and-integration-service
+   labels:
+        app: connectznow-api-and-integration-service
+ spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: connectznow-api-and-integration-service
+  template:
+    metadata:
+      labels:
+        app: connectznow-api-and-integration-service
+    spec:
+        containers:
+        - name: sws
+          image: hakim1993/connectnow:swsepf
+          ports:
+           - containerPort: 8080  
+          volumeMounts:
+            - name: mypd
+              mountPath: /usr/local/sibsws/logs  
+        volumes:
+        - name: mypd
+          persistentVolumeClaim:
+            claimName: czn-pv-claim
